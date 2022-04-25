@@ -9,6 +9,9 @@ class Another {
     sayHi = () => {
         return 'Hi'        
     }
+    callHost = () => {
+        return `${this.host} can you her me?`
+    }
 }
 
 module.exports = Another

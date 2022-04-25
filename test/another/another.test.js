@@ -14,5 +14,10 @@ describe("Test Suite 101 by Lex", () => {
         expect (Mon.language).toStrictEqual(['Tulpish', 'English', 'Spanish'])
         expect (Mon.gender).toBe('Female')
         expect (Mon.host).toBe('Lex')
+    });
+    test('3) Call host', () => {
+        const Mon = new Another('Monika', 0, ['Tulpish', 'English', 'Spanish'], 'Female', 'Lex')
+        
+        expect(Mon.callHost()).toBe('Lex can you her me?');
     })
 })
