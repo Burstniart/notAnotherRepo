@@ -11,7 +11,7 @@ describe("Test Suite 101 by Lex", () => {
 
         expect (Mon.name).toBe('Monika')
         expect (Mon.age).toBe(0)
-        expect (Mon.language).toBe(['Tulpish', 'English', 'Spanish'])
+        expect (Mon.language).toStrictEqual(['Tulpish', 'English', 'Spanish'])
         expect (Mon.gender).toBe('Female')
         expect (Mon.host).toBe('Lex')
     })
